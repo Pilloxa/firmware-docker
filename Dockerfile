@@ -1,7 +1,9 @@
 FROM ubuntu:latest
 
 RUN apt-get update \
-&& apt-get install -y make curl bzip2
+&& apt-get install -y make curl bzip2 python python-pip
+
+RUN pip install awscli
 
 RUN mkdir -p /usr/local/
 
