@@ -4,6 +4,7 @@ RUN apt-get update \
 && apt-get install -y make curl bzip2 python python-pip git
 
 RUN pip install awscli
+RUN pip install nrfutil
 
 RUN mkdir -p /usr/local/
 
